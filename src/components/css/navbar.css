@@ -1,7 +1,17 @@
 .container {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-end;
   color: white;
+  font-size: 18px;
+  padding: 1rem;
+}
+
+.contact {
+  border: 2px white solid;
+  border-radius: 10px;
+}
+
+.contact h3 {
+  margin: 100px 0;
 }

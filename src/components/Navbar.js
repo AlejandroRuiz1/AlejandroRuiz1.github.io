@@ -9,7 +9,7 @@ export default function Navbar() {
       <a href="#projects">
         <h3>Projects</h3>
       </a>
-      <a href="#contact">
+      <a href="#contact" className="contact">
         <h3>Contact Me</h3>
       </a>
     </div>

@@ -1,9 +1,61 @@
-#projects {
-    min-height:100vh;
+.article-container {
+    min-height: 100vh;
+    max-width: 80vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(2px + 2vmin);
     color: white;
+}
+
+.article-container h1 {
+    color: #71ded6;
+}
+
+/* article {
+    margin-bottom: 3rem;
+} */
+
+.divisor {
+    height: 5px;
+    width: 40vw;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,35%);
+    display: block;
+    margin: 2rem auto;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    margin: 10px 0;
+}
+
+#description {
+    text-align: justify;
+}
+
+.responsibilities {
+    margin: 3rem 0;
+}
+
+.responsibilities h3 {
+    text-align: center;
+}
+
+.technology {
+    padding: 2px;
+    border: 2px #71ded6 solid;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,35%);
+    margin: 5px;
+    text-align: center;
+    flex: 1 0 30%;
+}
+
+ul {
+    text-align: justify;
 }

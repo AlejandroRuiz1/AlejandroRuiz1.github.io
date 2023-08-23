@@ -13,16 +13,20 @@ export default function Projects() {
             <h3>My responsibilities included:</h3>
             <ul>
               {projects[project].responsibilities.map((res) => {
-                return <li className="responibility">{res}</li>;
+                return (
+                  <li key={res.id} className="responibility">
+                    {res.desc}
+                  </li>
+                );
               })}
             </ul>
           </div>
-          <h3>Technologies used:</h3>
           <div className="technologies">
+            <h3>Technologies used:</h3>
             {Object.keys(projects[project].technologies).map((technology) => {
               return (
-                <p className="technology">
-                  {projects[project].technologies[technology]}
+                <p className="technology" key={technology.id}>
+                  {projects[project].technologies[technology].desc}
                 </p>
               );
             })}
@@ -32,7 +36,6 @@ export default function Projects() {
           ) : (
             <span></span>
           )}
-          {console.log(Object.keys(projects).length, index)}
         </article>
       ))}
     </div>

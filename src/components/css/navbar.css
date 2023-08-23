@@ -1,17 +1,32 @@
-.container {
+nav {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  color: white;
-  font-size: 18px;
-  padding: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  gap: 2%;
 }
 
-.contact {
-  border: 2px white solid;
-  border-radius: 10px;
+.link-container {
+  display: flex;
+  size: 1em;
 }
 
-.contact h3 {
-  margin: 100px 0;
+.nav-link {
+  text-decoration: none;
+  padding: 8px 12px;
+  color: var(--text-color);
+  font-size: 1.2em;
+  transition: opacity .2s ease-in-out;
+  opacity: .75;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  padding: 6px 9px;
+  opacity: 1;
+  font-size: 1.4em;
+}
+
+.spacer {
+  flex: 1;
 }

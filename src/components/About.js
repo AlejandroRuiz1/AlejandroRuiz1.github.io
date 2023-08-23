@@ -6,7 +6,11 @@ export default function About() {
     <div id="about">
       <h1>About Me</h1>
       {about.intro.map((i) => {
-        return <p className="statement">{i}</p>;
+        return (
+          <p key={i.id} className="statement">
+            {i.desc}
+          </p>
+        );
       })}
     </div>
   );

@@ -4,9 +4,5 @@
   align-items: center;
   justify-content: center;
   font-size: calc(2px + 2vmin);
-  color: white;
 }
 
-p {
-  color: white;
-}

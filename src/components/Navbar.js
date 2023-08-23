@@ -2,16 +2,23 @@ import "./css/navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="container">
-      <a href="#about">
-        <h3>About</h3>
-      </a>
-      <a href="#projects">
-        <h3>Projects</h3>
-      </a>
-      <a href="#contact" className="contact">
-        <h3>Contact Me</h3>
-      </a>
-    </div>
+    <nav>
+      <span className="spacer"></span>
+      <div className="link-container">
+        <a className="nav-link" href="#about">
+          About
+        </a>
+      </div>
+      <div className="link-container">
+        <a className="nav-link" href="#projects">
+          Projects
+        </a>
+      </div>
+      <div className="link-container">
+        <a className="nav-link" href="#contact">
+          Contact
+        </a>
+      </div>
+    </nav>
   );
 }

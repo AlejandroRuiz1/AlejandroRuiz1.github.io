@@ -1,12 +1,15 @@
 import "./css/navbar.css";
 
-export default function Navbar() {
+const Nav = ({ logo }) => {
   return (
     <nav>
+      <a className="logo" href="/">
+        <img alt="aruiz.dev logo" src={logo} />
+      </a>
       <span className="spacer"></span>
       <div className="link-container">
-        <a className="nav-link" href="#about">
-          About
+        <a className="nav-link" href="#work-experience">
+          Work
         </a>
       </div>
       <div className="link-container">
@@ -21,4 +24,8 @@ export default function Navbar() {
       </div>
     </nav>
   );
+};
+
+export default function Navbar({ logo }) {
+  return <Nav logo={logo} />;
 }

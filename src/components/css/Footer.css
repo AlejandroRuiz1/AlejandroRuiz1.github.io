@@ -1,8 +1,8 @@
-.footer {
+#footer {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  font-size: calc(2px + 2vmin);
+  font-size: .7em;
+  gap: 2%;
+  align-items: center;
 }
-

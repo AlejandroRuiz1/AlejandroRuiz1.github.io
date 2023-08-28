@@ -1,15 +1,21 @@
 import "./css/Footer.css";
 
-export default function Footer() {
+const Content = ({ links }) => {
   return (
-    <div id="footer">
-      <p>Made by: Alejandro Ruiz</p>
-      <p>
-        <a href="https://www.freepik.com/free-vector/coding-concept-illustration_6572420.htm#query=programmer%20illustrated&position=0&from_view=search&track=ais">
+    <span id="footer">
+      <p>&copy; Copyright &nbsp; {new Date().getFullYear()}</p>
+      <p>&mdash;</p>
+      <a href="/">Alejandro Ruiz</a>
+      <p>&mdash;</p>
+      <span>
+        <a href={links.imgCredit} target="_blank" rel="noreferrer">
           Image by storyset
-        </a>{" "}
-        on Freepik
-      </p>
-    </div>
+        </a>
+        &nbsp; on Freepik
+      </span>
+    </span>
   );
+};
+export default function Footer({ links }) {
+  return <Content links={links} />;
 }

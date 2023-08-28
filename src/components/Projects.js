@@ -1,12 +1,11 @@
 import "./css/Projects.css";
-import projects from "../data/projects";
 
-export default function Projects() {
+const Content = ({ projects }) => {
   return (
-    <div className="article-container" id="projects">
+    <div id="projects">
       <h1>Projects</h1>
       {Object.keys(projects).map((project, index) => (
-        <article id={projects[project].name}>
+        <article className="card" id={projects[project].name}>
           <h2>{projects[project].name}</h2>
           <p id="description">{projects[project].description}</p>
           <div className="responsibilities">
@@ -31,13 +30,12 @@ export default function Projects() {
               );
             })}
           </div>
-          {Object.keys(projects).length - 1 !== index ? (
-            <span className="divisor"></span>
-          ) : (
-            <span></span>
-          )}
         </article>
       ))}
     </div>
   );
+};
+
+export default function Projects({ projects }) {
+  return <Content projects={projects} />;
 }

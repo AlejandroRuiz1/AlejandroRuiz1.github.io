@@ -4,6 +4,7 @@ nav {
   margin-top: 2rem;
   margin-bottom: 8rem;
   gap: 2%;
+  align-items: center;
 }
 
 .link-container {
@@ -15,18 +16,27 @@ nav {
   text-decoration: none;
   padding: 8px 12px;
   color: var(--text-color);
-  font-size: 1.2em;
+  font-size: 1.1em;
   transition: opacity .2s ease-in-out;
   opacity: .75;
   font-weight: bold;
 }
 
 .nav-link:hover {
-  padding: 6px 9px;
   opacity: 1;
-  font-size: 1.4em;
+  transform: scale(1.1);
 }
 
 .spacer {
   flex: 1;
+  display: block;
+}
+
+.logo {
+  width: 195px;
+  height: 36px;}
+
+.logo img{
+  width: inherit;
+  height: inherit;
 }

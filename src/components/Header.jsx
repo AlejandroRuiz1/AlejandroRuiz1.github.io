@@ -1,5 +1,5 @@
 import "./css/Header.css";
-import Contact from "./Contact.js";
+import Contact from "./Contact.jsx";
 
 const Left = ({ about, resume, links }) => {
   return (
@@ -21,7 +21,10 @@ const Left = ({ about, resume, links }) => {
       <Contact links={links} />
       <div id="resume-btn">
         <a href={resume} download="AlejandroRuiz_Resume.pdf">
-          <button type="button" className="btn">
+          <button
+            type="button"
+            className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+          >
             Download Resume
           </button>
         </a>
@@ -44,7 +47,7 @@ const Right = ({ img }) => {
 
 export default function Header({ img, about, resume, links }) {
   return (
-    <div className="hero">
+    <div className="">
       <Left about={about} resume={resume} links={links} />
       <Right img={img} />
     </div>

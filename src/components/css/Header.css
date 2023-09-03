@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
 }
 
@@ -60,4 +60,4 @@
     color: var(--text-color);
     cursor: pointer;
     border: 2px solid var(--highlight-color);
-}
+} */

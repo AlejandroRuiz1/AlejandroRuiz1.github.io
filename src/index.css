@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+@layer base {
+  body {
+    @apply font-lato;
+    @apply bg-slate-100;
+    @apply text-black;
+  }
+
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-slate-800;
+    @apply text-slate-100;
+  }
+}

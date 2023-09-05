@@ -1,55 +1,38 @@
-import "./css/Header.css";
 import Contact from "./Contact.jsx";
 
-const Left = ({ about, resume, links }) => {
+export default function Header({ img, about, links }) {
   return (
-    <div className="left">
-      <h3 className="greet">
-        Hi, my name is{" "}
-        <span className="name">
-          {about.firstName}&nbsp;{about.lastName}
-        </span>
-        .
-      </h3>
-      {about.intro.map((i) => {
-        return (
-          <p className="statement" key={i.id}>
-            {i.desc}
-          </p>
-        );
-      })}
-      <Contact links={links} />
-      <div id="resume-btn">
-        <a href={resume} download="AlejandroRuiz_Resume.pdf">
-          <button
-            type="button"
-            className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
-          >
-            Download Resume
-          </button>
-        </a>
+    <div className="overflow-hidden md:flex md:items-center lg:h-screen lg:mt-0 mt-24 md:mt-40">
+      <div className="flex flex-col w-full pt-12 px-6 lg:py-16 lg:px-8">
+        <div className="flex flex-col w-full lg:w-3/4 lg:mx-auto justify-start">
+          <h2 className="text-3xl font-extrabold sm:text-4xl">
+            {"Hi, my name is "}
+            <span className="text-5xl font-bold text-blue mt-2 mb-4 sm:whitespace-nowrap">
+              {about.firstName + " " + about.lastName}
+            </span>
+          </h2>
+          {about.intro.map((i) => {
+            return (
+              <p className="text-xl mt-4" key={i.id}>
+                {i.desc}
+              </p>
+            );
+          })}
+        </div>
+        <div className="lg:mt-0 lg:flex-shrink-0">
+          <Contact links={links} />
+        </div>
       </div>
-    </div>
-  );
-};
-
-const Right = ({ img }) => {
-  return (
-    <div className="right">
-      <img
-        className="dev"
-        src={img}
-        alt="Illustration of a developer coding on a laptop."
-      />
-    </div>
-  );
-};
-
-export default function Header({ img, about, resume, links }) {
-  return (
-    <div className="">
-      <Left about={about} resume={resume} links={links} />
-      <Right img={img} />
+      <div className="flex p-4">
+        <picture className="w-64 mx-auto xs:w-full sm:w-[500px] md:w-96 lg:w-[500px] sm:mx-auto">
+          <source
+            srcSet={img} />
+          <img
+            src={img}
+            alt="Illustration of a developer coding on a laptop."
+          />
+        </picture>
+      </div>
     </div>
   );
 }

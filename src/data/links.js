@@ -1,31 +1,37 @@
-// const socialLinks = [
-//   {
-//     name: "email",
-//     href: links["mailTo"],
-//     alt: "Email Icon",
-//     src: { emailIcon },
-//   },
-//   {
-//     name: "linkedin",
-//     href: links["linkedin"],
-//     alt: "LinkedIn Icon",
-//     src: { linkedinIcon },
-//   },
-//   {
-//     name: "github",
-//     href: links["github"],
-//     alt: "GitHub Icon",
-//     src: { githubIcon },
-//   },
-// ];
+import resume from "../static/AlejandroRuiz_Resume.pdf";
+import emailIcon from "../static/email-icon.png";
+import linkedinIcon from "../static/linkedin-icon.png";
+import githubLight from "../static/github-light.png";
+import githubDark from "../static/github-dark.png";
+import resumeIconLight from "../static/resume-icon-light.png";
+import resumeIconDark from "../static/resume-icon-dark.png";
 
-const links = {
-  email: "alejandro@aruiz.dev",
-  linkedin: "https://www.linkedin.com/in/alejandroruiz1/",
-  github: "https://github.com/AlejandroRuiz1",
-  imgCredit:
-    "https://www.freepik.com/free-vector/coding-concept-illustration_6572420.htm#query=programmer%20illustrated&position=0&from_view=search&track=ais",
-  mailTo: "mailto:alejandro@aruiz.dev",
-};
+const links = [
+  {
+    name: "Email",
+    href: "mailto:alejandro@aruiz.dev",
+    alt: "Email Icon",
+    src: { light: emailIcon, dark: emailIcon },
+  },
+  {
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/alejandroruiz1/",
+    alt: "LinkedIn Icon",
+    src: { light: linkedinIcon, dark: linkedinIcon },
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/AlejandroRuiz1",
+    alt: "GitHub Icon",
+    src: { light: githubLight, dark: githubDark },
+  },
+  {
+    name: "Resume",
+    href: resume,
+    alt: "Resume Icon",
+    src: { light: resumeIconLight, dark: resumeIconDark },
+    download: "AlejandroRuiz_Resume.pdf",
+  },
+];
 
 export default links;

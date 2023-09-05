@@ -8,9 +8,15 @@ module.exports = {
     extend: {
       colors: {
         blue: "#448FA3",
+        lightBlue: "#68C5DB",
         purple: "#525174",
         green: "#9ECE9A",
         white: "#f1f1f1",
+      },
+    },
+    variants: {
+      extend: {
+        display: ["group-hover"],
       },
     },
   },

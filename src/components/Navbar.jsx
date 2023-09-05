@@ -1,73 +1,80 @@
-// import "./css/navbar.css";
-
 import { useState } from "react";
+import { FaBars, FaXmark } from "react-icons/fa6";
 
-// function Hamburger
 
 const Nav = ({ logo }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => setIsNavOpen(!isNavOpen);
+
   return (
-    <nav className="flex items-center justify-between flex-wrap p-2 bg-slate-200">
-      <div className="flex items-center flex-shrink-0 text-white mr-6 ">
-        <a className="w-48" href="/">
-          <img alt="aruiz.dev logo" src={logo} />
-        </a>
-      </div>
-      <div className="block md:hidden">
-        <button className="flex items-center px-3 py-2 border rounded text-blue border-blue hover:text-blue hover:border-blue"
-          onClick={() => setIsNavOpen((prev) => !prev)}
-        >
-          <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
-        </button>
-      </div>
-      <div className={isNavOpen ? "w-full flex-grow md:flex md:items-center md:w-auto" : "hidden w-full flex-grow md:flex md:items-center md:w-auto"}>
-        <div className="text-sm flex-col sm:flex-grow">
-          <a href="#work-experience" className="block w-fit mx-auto mt-4 md:inline-block md:mt-0 text-purple hover:text-purple mr-4">
-            Work
+    <div className="fixed w-full flex justify-between items-center px-4 h-20 mb-20 bg-slate-200 dark:bg-slate-700 shadow-md">
+
+      {/* Logo */}
+      <a href="/">
+        <img src={logo} width={220} className="select-none hover:scale-105 cursor-pointer" alt="ARuiz.dev logo" />
+      </a>
+
+
+      {/* Navbar links */}
+      <ul className="hidden md:flex">
+        <li className="hover:text-blue block font-semibold select-none hover:scale-125">
+          <a href="/">
+            Home
           </a>
-          <a href="#projects" className="block w-fit mx-auto mt-4 md:inline-block md:mt-0 text-purple hover:text-white mr-4">
+        </li>
+        {/* <li className="hover:text-blue font-semibold select-none hover:scale-125">
+          <a href="/">
+            About
+          </a>
+        </li> */}
+        <li className="hover:text-blue font-semibold select-none hover:scale-125">
+          <a href="#projects">
             Projects
           </a>
-          <a href="#contact" className="block w-fit mx-auto mt-4 md:inline-block md:mt-0 text-purple hover:text-white">
+        </li>
+        <li className="hover:text-blue font-semibold select-none hover:scale-125">
+          <a href="/">
             Contact
           </a>
-        </div>
+        </li>
+      </ul>
+
+      {/* Hamburger */}
+      <div className="md:hidden z-20 cursor-pointer">
+        {!isNavOpen
+          ? <FaBars className="h-8 w-8 text-blue" onClick={toggleNav} />
+          : <FaXmark className="h-10 w-8 text-blue" onClick={toggleNav} />
+        }
       </div>
-    </nav>
 
 
-
-
-
-
-    // <nav className="flex items-center justify-between flex-wrap bg-slate-400 p-6">
-    //   <div className="flex items-center flex-shrink-0 text-white mr-6">
-    //     <a className="w-48" href="/">
-    //       <img alt="aruiz.dev logo" src={logo} />
-    //     </a>
-    //   </div>
-    //   <span className="spacer"></span>
-    //   <div className="link-container">
-    //     <a className="nav-link" href="#work-experience">
-    //       Work
-    //     </a>
-    //   </div>
-    //   <div className="link-container">
-    //     <a className="nav-link" href="#projects">
-    //       Projects
-    //     </a>
-    //   </div>
-    //   <div className="link-container">
-    //     <a className="nav-link" href="#contact">
-    //       Contact
-    //     </a>
-    //   </div>
-    // </nav>
+      {/* Modal */}
+      <ul className={`${!isNavOpen ? "translate-x-full z-10" : "translate-x-0"} ease-in-out duration-500 absolute top-0 left-0 w-full h-screen bg-slate-200 dark:bg-slate-700 flex flex-col justify-center items-center md:hidden`}>
+        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125 focus:scale-125" href="/">
+          <a href="/" onClick={toggleNav}>
+            Home
+          </a>
+        </li>
+        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125" href="/">
+          <a href="/" onClick={toggleNav}>
+            About
+          </a>
+        </li>
+        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125" href="#projects">
+          <a href="#projects" onClick={toggleNav}>
+            Projects
+          </a>
+        </li>
+        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125" href="/">
+          <a href="/" onClick={toggleNav}>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 };
-
-
-
 
 export default function NavBar({ logo }) {
   return <Nav logo={logo} />;

@@ -77,15 +77,15 @@ const projects = {
     responsibilities: [
       {
         id: 0,
-        desc: "Worked closely with two team members to develop a plant caring simulator in Virtual Reality built in Unity.",
+        desc: "Developed Back End controllers and REST API endpoints for querying a PostgreSQL DB using Python and Flask.",
       },
       {
         id: 1,
-        desc: "Lead creative efforts such as: generating plant leaf textures using photo editing software, designing and 3D modeling plants using SpeedTree Modeler and Blender, building terrain and staging assets in garden scene.",
+        desc: "Designed UI wireframes and UX flows for the Home and Cart pages using Figma.",
       },
       {
         id: 2,
-        desc: "Enforced quality control by play testing project throughout development process using VR headset",
+        desc: "Implemented Front End functionality based on Figma wireframes using React, JavaScript, HTML and CSS.",
       },
     ],
   },

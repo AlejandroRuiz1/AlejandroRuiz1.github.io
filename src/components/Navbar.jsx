@@ -8,11 +8,11 @@ const Nav = ({ logo }) => {
   const toggleNav = () => setIsNavOpen(!isNavOpen);
 
   return (
-    <div className="fixed w-full flex justify-between items-center px-4 h-20 mb-20 bg-slate-200 dark:bg-slate-700 shadow-md">
+    <div className="fixed w-full flex justify-between items-center px-2 md:px-4 h-20 bg-slate-200 dark:bg-slate-700 shadow-md">
 
       {/* Logo */}
       <a href="/">
-        <img src={logo} width={220} className="select-none hover:scale-105 cursor-pointer" alt="ARuiz.dev logo" />
+        <img src={logo} width={220} className="select-none hover:scale-105 cursor-pointer px-2" alt="ARuiz.dev logo" />
       </a>
 
 
@@ -23,11 +23,11 @@ const Nav = ({ logo }) => {
             Home
           </a>
         </li>
-        {/* <li className="hover:text-blue font-semibold select-none hover:scale-125">
-          <a href="/">
-            About
+        <li className="hover:text-blue font-semibold select-none hover:scale-125">
+          <a href="#internships">
+            Internships
           </a>
-        </li> */}
+        </li>
         <li className="hover:text-blue font-semibold select-none hover:scale-125">
           <a href="#projects">
             Projects
@@ -41,7 +41,7 @@ const Nav = ({ logo }) => {
       </ul>
 
       {/* Hamburger */}
-      <div className="md:hidden z-20 cursor-pointer">
+      <div className="md:hidden z-20 cursor-pointer px-2">
         {!isNavOpen
           ? <FaBars className="h-8 w-8 text-blue" onClick={toggleNav} />
           : <FaXmark className="h-10 w-8 text-blue" onClick={toggleNav} />

@@ -86,7 +86,7 @@ const workExperience = {
   ERM: {
     role: "Information Security Consultant Intern",
     company: "ERM Protect",
-    timeFrame: "May 2022 - August 2022",
+    timeFrame: "May 2019 - August 2019",
     location: "Coral Gables, FL",
     responsibilities: [
       {

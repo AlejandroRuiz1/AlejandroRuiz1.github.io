@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc6ae2ef.css",
-    "main.js": "/static/js/main.34fcd15b.js",
+    "main.css": "/static/css/main.d3b6394a.css",
+    "main.js": "/static/js/main.0b8a37b4.js",
     "static/js/496.eefed8e2.chunk.js": "/static/js/496.eefed8e2.chunk.js",
-    "static/media/AlejandroRuiz_Resume.pdf": "/static/media/AlejandroRuiz_Resume.cb106ee90d7cefcf9e87.pdf",
+    "static/media/python-logo.png": "/static/media/python-logo.c44b9b809ebf766cbb4f.png",
+    "static/media/AlejandroRuiz_Resume2023.pdf": "/static/media/AlejandroRuiz_Resume2023.5a932bcdd86cae404dd2.pdf",
     "static/media/dev.svg": "/static/media/dev.6dff5d135172c33da6aa918692042649.svg",
+    "static/media/sql-logo.png": "/static/media/sql-logo.f07f7d9c11767cc2e498.png",
     "static/media/email-icon.png": "/static/media/email-icon.f9bc64a83f075956cd33.png",
+    "static/media/css-logo.png": "/static/media/css-logo.78c02b0b097d64a1959a.png",
     "static/media/aruiz-logo.png": "/static/media/aruiz-logo.82807f01e9be53d07d93.png",
+    "static/media/csharp-logo.svg": "/static/media/csharp-logo.a7ec03d256f307422701fb3e4c812f76.svg",
+    "static/media/react-logo.svg": "/static/media/react-logo.011e7c1df86b45faf46cd92fe47d6bbd.svg",
     "index.html": "/index.html",
-    "main.bc6ae2ef.css.map": "/static/css/main.bc6ae2ef.css.map",
-    "main.34fcd15b.js.map": "/static/js/main.34fcd15b.js.map",
+    "static/media/tailwindcss-logo.svg": "/static/media/tailwindcss-logo.79614a5f61617ba49a0891494521226b.svg",
+    "main.d3b6394a.css.map": "/static/css/main.d3b6394a.css.map",
+    "main.0b8a37b4.js.map": "/static/js/main.0b8a37b4.js.map",
     "496.eefed8e2.chunk.js.map": "/static/js/496.eefed8e2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc6ae2ef.css",
-    "static/js/main.34fcd15b.js"
+    "static/css/main.d3b6394a.css",
+    "static/js/main.0b8a37b4.js"
   ]
 }

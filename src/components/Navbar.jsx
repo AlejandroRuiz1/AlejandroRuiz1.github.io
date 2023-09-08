@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import { FaBars, FaXmark } from "react-icons/fa6";
 
 
@@ -8,7 +9,7 @@ const Nav = ({ logo }) => {
   const toggleNav = () => setIsNavOpen(!isNavOpen);
 
   return (
-    <div className="fixed w-full flex justify-between items-center px-2 md:px-4 h-20 bg-slate-200 dark:bg-slate-700 shadow-md z-[9999]">
+    <div className="fixed w-full flex justify-between items-center px-2 md:px-4 h-20 bg-slate-700 shadow-md z-[9999]">
 
       {/* Logo */}
       <a href="/">
@@ -19,29 +20,29 @@ const Nav = ({ logo }) => {
       {/* Navbar links */}
       <ul className="hidden md:flex">
         <li className="hover:text-blue block font-semibold select-none hover:scale-125">
-          <a href="/">
+          <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
             Home
-          </a>
+          </Link>
         </li>
         <li className="hover:text-blue font-semibold select-none hover:scale-125">
-          <a href="#skills">
+          <Link to="skills" spy={true} smooth={true} offset={50} duration={500}>
             Skills
-          </a>
+          </Link>
         </li>
         <li className="hover:text-blue font-semibold select-none hover:scale-125">
-          <a href="#internships">
+          <Link to="internships" spy={true} smooth={true} offset={50} duration={500}>
             Internships
-          </a>
+          </Link>
         </li>
         <li className="hover:text-blue font-semibold select-none hover:scale-125">
-          <a href="#projects">
+          <Link to="projects" spy={true} smooth={true} offset={50} duration={500}>
             Projects
-          </a>
+          </Link>
         </li>
         <li className="hover:text-blue font-semibold select-none hover:scale-125">
-          <a href="/">
+          <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -55,7 +56,7 @@ const Nav = ({ logo }) => {
 
 
       {/* Modal */}
-      <ul className={`${!isNavOpen ? "translate-x-full z-10" : "translate-x-0"} ease-in-out duration-500 absolute top-0 left-0 w-full h-screen bg-slate-200 dark:bg-slate-700 flex flex-col justify-center items-center md:hidden`}>
+      <ul className={`${!isNavOpen ? "translate-x-full z-10" : "translate-x-0"} ease-in-out duration-500 absolute top-0 left-0 w-full h-screen bg-slate-700 flex flex-col justify-center items-center md:hidden`}>
         <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125 focus:scale-125">
           <a href="/" onClick={toggleNav}>
             Home

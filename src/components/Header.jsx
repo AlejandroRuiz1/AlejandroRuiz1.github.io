@@ -2,7 +2,7 @@ import Contact from "./Contact.jsx";
 
 export default function Header({ img, about, links }) {
   return (
-    <div className="flex md:h-screen mt-20 pb-20 md:w-[80vw] mx-auto">
+    <div id="home" className="flex md:h-screen mt-20 pb-20 md:w-[80vw] mx-auto">
       <div className="mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 flex-wrap items-center">
         <div className="w-full pt-12 px-6 lg:py-16 lg:px-8">
           <div id="text" className="flex flex-col w-full lg:mx-auto">

@@ -2,7 +2,7 @@ let imgCredit = "https://www.freepik.com/free-vector/coding-concept-illustration
 
 const Content = () => {
   return (
-    <div id="footer" className="absolute bottom-0 w-full h-10 flex justify-center p-2 bg-slate-200 dark:bg-slate-700 text-center text-xs items-center flex-shrink">
+    <div id="footer" className="absolute bottom-0 w-full h-10 flex justify-center p-2 bg-slate-700 text-center text-xs items-center flex-shrink">
       <p>&copy; Copyright &nbsp; {new Date().getFullYear()}</p>
       <p className="text-blue px-3">&mdash;</p>
       <a href="/">Alejandro Ruiz</a>

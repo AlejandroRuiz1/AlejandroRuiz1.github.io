@@ -1,7 +1,7 @@
 
 export default function InternshipCard({ experience, job }) {
   return (
-    <article className="max-w-md shadow-md rounded-xl p-4 bg-slate-100 dark:bg-slate-700 transition ease-in-out
+    <article className="max-w-md shadow-md rounded-xl p-4 bg-slate-700 transition ease-in-out
     hover:-translate-y-1 hover:scale-105 duration-150 border-blue hover:border-2" id={experience[job].company} key={job.key}>
       <h2 className="text-3xl font-semibold pb-4 text-center border-b-2 border-b-blue mb-4">{experience[job].company}</h2>
       <div className="text-base">

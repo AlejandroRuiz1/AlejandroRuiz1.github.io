@@ -8,7 +8,7 @@ const Nav = ({ logo }) => {
   const toggleNav = () => setIsNavOpen(!isNavOpen);
 
   return (
-    <div className="fixed w-full flex justify-between items-center px-2 md:px-4 h-20 bg-slate-200 dark:bg-slate-700 shadow-md">
+    <div className="fixed w-full flex justify-between items-center px-2 md:px-4 h-20 bg-slate-200 dark:bg-slate-700 shadow-md z-[9999]">
 
       {/* Logo */}
       <a href="/">
@@ -21,6 +21,11 @@ const Nav = ({ logo }) => {
         <li className="hover:text-blue block font-semibold select-none hover:scale-125">
           <a href="/">
             Home
+          </a>
+        </li>
+        <li className="hover:text-blue font-semibold select-none hover:scale-125">
+          <a href="#skills">
+            Skills
           </a>
         </li>
         <li className="hover:text-blue font-semibold select-none hover:scale-125">
@@ -51,23 +56,28 @@ const Nav = ({ logo }) => {
 
       {/* Modal */}
       <ul className={`${!isNavOpen ? "translate-x-full z-10" : "translate-x-0"} ease-in-out duration-500 absolute top-0 left-0 w-full h-screen bg-slate-200 dark:bg-slate-700 flex flex-col justify-center items-center md:hidden`}>
-        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125 focus:scale-125" href="/">
+        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125 focus:scale-125">
           <a href="/" onClick={toggleNav}>
             Home
           </a>
         </li>
-        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125" href="/">
-          <a href="/" onClick={toggleNav}>
-            About
+        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125">
+          <a href="#skills" onClick={toggleNav}>
+            Skills
           </a>
         </li>
-        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125" href="#projects">
+        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125">
+          <a href="#internships" onClick={toggleNav}>
+            Internships
+          </a>
+        </li>
+        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125">
           <a href="#projects" onClick={toggleNav}>
             Projects
           </a>
         </li>
-        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125" href="/">
-          <a href="/" onClick={toggleNav}>
+        <li className="py-6 text-3xl block hover:text-blue font-semibold select-none hover:scale-125">
+          <a href="#contact" onClick={toggleNav}>
             Contact
           </a>
         </li>

@@ -1,9 +1,20 @@
+import intel_logo from "../static/company-logos/intel-logo.png";
+import nagnoi_logo from "../static/company-logos/nagnoi-logo.png";
+import ermprotect_logo from "../static/company-logos/ermprotect-logo.png";
+
+
 const workExperience = {
   Intel: {
     role: "Undergraduate Technical Intern",
     company: "Intel Corporation",
     timeFrame: "May 2022 - August 2022",
     location: "Hillsboro, OR",
+    img: {
+      src: intel_logo,
+      alt: "Intel Corporation Logo",
+      href: "https://www.intel.com/content/www/us/en/homepage.html"
+    },
+    shadow: "shadow-sky-600 hover:shadow-sky-600",
     responsibilities: [
       {
         id: 0,
@@ -34,6 +45,12 @@ const workExperience = {
     company: "Nagnoi LLC",
     timeFrame: "August 2020 – December 2020",
     location: "Remote",
+    img: {
+      src: nagnoi_logo,
+      alt: "Nagnoi LLC Logo",
+      href: "https://www.nagnoi.com/"
+    },
+    shadow: "shadow-orange-600 hover:shadow-orange-600",
     responsibilities: [
       {
         id: 0,
@@ -88,6 +105,12 @@ const workExperience = {
     company: "ERM Protect",
     timeFrame: "May 2019 - August 2019",
     location: "Coral Gables, FL",
+    img: {
+      src: ermprotect_logo,
+      alt: "ERM Protect Logo",
+      href: "https://ermprotect.com/",
+    },
+    shadow: "shadow-red-600 hover:shadow-red-600",
     responsibilities: [
       {
         id: 0,

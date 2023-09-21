@@ -1,4 +1,4 @@
-import resume from "../static/AlejandroRuiz_Resume2023.pdf";
+import resume from "../static/AlejandroRuiz_Resume.pdf";
 import emailIcon from "../static/email-icon.png";
 import linkedinIcon from "../static/linkedin-icon.png";
 import githubDark from "../static/github-dark.png";
